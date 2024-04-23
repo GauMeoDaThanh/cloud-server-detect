@@ -4,4 +4,4 @@ from cloud_server_socket import ServerSocket
 
 def run_server():
     server_socket = ServerSocket()
-    server_socket.run()
+    # server_socket.run()
