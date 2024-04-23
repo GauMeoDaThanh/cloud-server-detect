@@ -52,8 +52,9 @@ class ServerSocket:
             self.detect_machine = False
             print("Detect machine disconnected")
 
-    # def run(self):
-    #     print("Server is running")
-    #     # self.socket.run(self.app, debug=True, allow_unsafe_werkzeug=True, log_output=True,
-    #     #                 host="0.0.0.0")
-    #     self.socket.run(self.app)
+    def run(self):
+        # print("Server is running")
+        # self.socket.run(self.app, debug=True, allow_unsafe_werkzeug=True, log_output=True,
+        #                 host="0.0.0.0")
+        # self.socket.run(self.app)
+        self.socket.run(self.app, host="0.0.0.0", allow_unsafe_werkzeug=True)
