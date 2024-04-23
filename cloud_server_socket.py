@@ -54,5 +54,6 @@ class ServerSocket:
 
     def run(self):
         print("Server is running")
-        self.socket.run(self.app, debug=True, allow_unsafe_werkzeug=True, log_output=True,
-                        host="0.0.0.0")
+        # self.socket.run(self.app, debug=True, allow_unsafe_werkzeug=True, log_output=True,
+        #                 host="0.0.0.0")
+        self.socket.run(self.app, debug=True, log_output=True)
